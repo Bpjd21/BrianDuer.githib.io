@@ -9,26 +9,29 @@
     font-weight: 400;
   } 
 
-.bg1, .bg2 {
+.bg1, .bg2 .bg3 {
     position: relative;     
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;  
     background-attachment: fixed;
-
 }
 
 .bg1{    
     background-image: url("images/BlackWhite.png");  
-    min-height: 1000px;   
-    opacity: 0.5; 
+    min-height: 100vh;    
 }
 
-.bg2{
-    
-    background-image: url("images/cleveland-1625471_1920.jpg"); 
-    opacity: 0.70;
-    min-height: 500px;      
+.bg2{    
+    background-image: url("images/TowerCity.jpg"); 
+    opacity: 0.50;
+    min-height: 80vh;      
+ }
+
+ .bg3{    
+    background-image: url("images/pexels-photo-1509428.jpeg"); 
+    opacity: 0.50;
+    min-height: 60vh;      
  }
 
 section {
@@ -47,29 +50,36 @@ section {
     letter-spacing: 3px;
 }
 
-.span .boarder{
-    background-color: black;    
-    padding: 60px;
+.Quotes {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 80px;
 }
 
+span {
+    position: center;
+    background-color: rgb(158, 149, 149); 
+    color: rgb(12, 12, 12);   
+    padding: 30px; 
+    opacity: 0.8;  
+}
 
 header {    
     width: 100%;
-    position: absolute;    
-    
+    position: fixed; 
+    z-index: 2;       
 }
 
 nav{
     background-color: deepskyblue;
     color: black;
     font-weight: 1000;
-    height: 60px;    
+    height: 50px;    
     padding: 10px;    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 0 0 25% 25% / 65%;
-
 }
 
 a:link{
@@ -89,12 +99,12 @@ footer {
     height: 60px;    
     padding: 10px;
     position: fixed;
+    z-index: 2;
     display: flex;
     flex-direction: flex-end;
     justify-content: space-evenly;  
     background-color: deepskyblue;
-    opacity: 0.5;
-    border-radius: 25% 25% 0 0 / 65%;
-    
+    opacity: 0.8;
+    border-radius: 25% 25% 0 0 / 65%;    
 }
 
