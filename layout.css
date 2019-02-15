@@ -1,57 +1,84 @@
-* {
-    box-sizing: border-box;    
-    font-family: 'Bitter', serif;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Varela Round', sans-serif;
-    }
-
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .body, html {
     height: 100%;
     margin: 0;
+    font-weight: 400;
   } 
 
-body {
-    background-image: url(images/computer-1245714_1920black\ and\ white.png);
+.bg1, .bg2 {
+    position: relative;     
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;  
     background-attachment: fixed;
+
+}
+
+.bg1{    
+    background-image: url("images/BlackWhite.png");  
+    min-height: 1000px;   
+    opacity: 0.5; 
+}
+
+.bg2{
+    
+    background-image: url("images/cleveland-1625471_1920.jpg"); 
+    opacity: 0.70;
+    min-height: 500px;      
  }
 
-header, main, footer {
-    flex-shrink: 0;
+section {
+    text-align: center;
+    padding: 50px 50px;
 }
 
-body{
-    display: grid;
-}
-
-header {
-    top: 0;
-    left: 0;
+.text1 {
+    position: absolute;
+    top: 50%;
     width: 100%;
-    height: 60px;    
-    padding: 10px;
-    margin-bottom: 0px;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.span .boarder{
+    background-color: black;    
+    padding: 60px;
+}
+
+
+header {    
+    width: 100%;
+    position: absolute;    
     
 }
 
 nav{
+    background-color: deepskyblue;
+    color: black;
+    font-weight: 1000;
+    height: 60px;    
+    padding: 10px;    
     display: flex;
-    justify-content: center;
-   
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 0 0 25% 25% / 65%;
 
 }
 
 a:link{
-    color:rgb(10, 10, 10);
-    background-color: transparent;
+    color:rgb(10, 10, 10);    
     text-decoration: none;
-    font-size: 2rem;
-    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;    
 }
  
-a:hover {
+a:hover{
     color: rgb(100, 158, 224);
 }
 
@@ -60,10 +87,14 @@ footer {
     left: 0;
     width: 100%;
     height: 60px;    
+    padding: 10px;
     position: fixed;
     display: flex;
     flex-direction: flex-end;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;  
+    background-color: deepskyblue;
+    opacity: 0.5;
+    border-radius: 25% 25% 0 0 / 65%;
     
 }
 
