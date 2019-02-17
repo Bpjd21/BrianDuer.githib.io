@@ -24,7 +24,7 @@
 
 .bg2{    
     background-image: url("images/TowerCity.jpg");    
-    min-height: 60vh;      
+    min-height: 55vh;      
  }
 
 .bg3{    
@@ -67,6 +67,12 @@ span {
     border-radius: 4%;
 }
 
+.AboutMe {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+}
+
 .Projects {
     display: grid;
     padding-top: 50px;
@@ -74,7 +80,7 @@ span {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows: 2;   
     grid-gap: 30px;   
-    justify-content: center;
+    
 }
 
 .textp {
