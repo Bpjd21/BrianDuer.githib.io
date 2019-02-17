@@ -9,8 +9,8 @@
     font-weight: 400;
   } 
 
-.bg1, .bg2 .bg3 {
-    position: relative;     
+.bg1, .bg2, .bg3 {
+    position: relative;    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;  
@@ -23,14 +23,12 @@
 }
 
 .bg2{    
-    background-image: url("images/TowerCity.jpg"); 
-    opacity: 0.50;
-    min-height: 80vh;      
+    background-image: url("images/TowerCity.jpg");    
+    min-height: 70vh;      
  }
 
- .bg3{    
-    background-image: url("images/pexels-photo-1509428.jpeg"); 
-    opacity: 0.50;
+.bg3{    
+    background-image: url("images/pexels-photo-1509428.jpeg");     
     min-height: 60vh;      
  }
 
@@ -59,9 +57,54 @@ section {
 span {
     position: center;
     background-color: rgb(158, 149, 149); 
-    color: rgb(12, 12, 12);   
+    color: rgb(12, 12, 12);  
+    font-weight: 800; 
     padding: 30px; 
     opacity: 0.8;  
+}
+
+.Projects {
+    display: grid;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 2;   
+    grid-gap: 30px;   
+    justify-content: center;
+}
+
+.textp {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row: 1;
+    font-size: 50px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.left {
+    grid-column: 2;
+    grid-row: 2;    
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+    
+}
+
+.middle {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.right {
+    grid-column: 6;
+    grid-row: 2;
+    font-size: 20px;
+    font-weight: 1000;
+    text-align: center;
 }
 
 header {    
