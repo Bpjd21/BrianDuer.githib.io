@@ -51,7 +51,7 @@ section {
 .Quotes {
     font-weight: 600;
     font-size: 30px;
-    padding: 150px;
+    padding: 100px;
     text-align: center;
     margin-left: 8vw;
     margin-right: 8vw;
@@ -102,24 +102,24 @@ span {
     font-size: 20px;
     font-weight: 1000;
     text-align: justify;
-        
+    padding-right: 20px;
+       
 }
 
 .Email {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     text-align: center;
-    position: static;
-
 }
 
 .Phone {
     grid-column: 3;
-    grid-row: 2; 
+    grid-row: 3; 
     text-align: center;
 }
 
 .myphoto {
+    padding-top: 50px;
     grid-column: 1;
     
 }
